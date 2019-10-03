@@ -662,7 +662,7 @@
     "@types/istanbul-lib-coverage" "^1.1.0"
     "@types/yargs" "^12.0.9"
 
-"@types/estree@0.0.39":
+"@types/estree@*":
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
@@ -672,10 +672,15 @@
   resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-1.1.0.tgz#2cc2ca41051498382b43157c8227fea60363f94a"
   integrity sha512-ohkhb9LehJy+PA40rDtGAji61NCgdtKLAlFoYp4cnuuQEswwdK3vz9SOIkkyc3wrk8dzjphQApNs56yyXLStaQ==
 
-"@types/node@*", "@types/node@^11.11.6":
+"@types/node@*":
   version "11.12.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.12.0.tgz#ec5594728811dc2797e42396cfcdf786f2052c12"
   integrity sha512-Lg00egj78gM+4aE0Erw05cuDbvX9sLJbaaPwwRtdCdAMnIudqrQZ0oZX98Ek0yiSK/A2nubHgJfvII/rTT2Dwg==
+
+"@types/node@^12.7.10":
+  version "12.7.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.10.tgz#942c128c37b5d780aff5441fd457cd7ffdc18b36"
+  integrity sha512-ObiPa43kJCkgjG+7usRCoxWhqKCmT5JWvi+8bg54KMkP2CvTliYLmKR9uHLaz+51JDOX/8MjWc6Xz18xHTs7XQ==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -692,10 +697,15 @@ acorn-jsx@^5.0.0:
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.0.1.tgz#32a064fd925429216a09b141102bfdd185fae40e"
   integrity sha512-HJ7CfNHrfJLlNTzIEUTj43LNWGkqpRLxm3YjAlcD0ACydk9XynzYsCBHxut+iqt+1aBXkx9UP/w/ZqMr13XIzg==
 
-acorn@^6.0.7, acorn@^6.1.1:
+acorn@^6.0.7:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.1.1.tgz#7d25ae05bb8ad1f9b699108e1094ecd7884adc1f"
   integrity sha512-jPTiwtOxaHNaAPg/dmrJ/beuzLRnXtB0kQPQ8JpotKJgTB6rX6c8mlf315941pyjBSaPg8NHXS9fhP4u17DpGA==
+
+acorn@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.1.0.tgz#949d36f2c292535da602283586c2477c57eb2d6c"
+  integrity sha512-kL5CuoXA/dgxlBbVrflsflzQ3PAas7RYZB52NOm/6839iVYJgKMJ3cQJD+t2i5+qFa8h3MDpEOJiS64E8JLnSQ==
 
 ajv@^6.5.5, ajv@^6.9.1:
   version "6.10.0"
@@ -3546,14 +3556,14 @@ rollup-pluginutils@^2.3.0, rollup-pluginutils@^2.4.1, rollup-pluginutils@^2.5.0:
     estree-walker "^0.6.0"
     micromatch "^3.1.10"
 
-rollup@^1.3.2:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.7.3.tgz#cade518b92e23efa72026e264e29d9a56cbf8eb9"
-  integrity sha512-U3/HaZujvGofNZQldfIknKoaNFNRS+j8/uCS/jSy3FrxF9t0FBsgZW4+VXLHG7l1daTgE6+jEy0Dv7cVCB2NPg==
+rollup@^1.23.0:
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.23.0.tgz#e2b2686fc77dfc7891f5adb95c8d865e0f1eb5f4"
+  integrity sha512-/p72Z3NbHWV+Vi1p2X+BmPA3WqlZxpUqCy6E8U4crMohZnI+j9Ob8ZAfFyNfddT0LxgnJM0olO4mg+noH4SFbg==
   dependencies:
-    "@types/estree" "0.0.39"
-    "@types/node" "^11.11.6"
-    acorn "^6.1.1"
+    "@types/estree" "*"
+    "@types/node" "^12.7.10"
+    acorn "^7.1.0"
 
 run-async@^2.2.0:
   version "2.3.0"
